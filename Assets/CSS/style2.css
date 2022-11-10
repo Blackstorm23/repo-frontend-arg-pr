@@ -1,0 +1,138 @@
+/*TODO*/
+body{
+    background-image: url(../IMG/pexels-josh-sorenson-1154510.jpg);
+}
+div.everything{
+    width: 100%;
+    margin:0 auto;
+    overflow: hidden;
+}
+
+
+/*HEADER*/
+.navbar.navbar-expand-lg.bg-primary {
+    background-color: #000000 !important;
+}
+i.fa-brands.fa-instagram.fa-2xl:hover{
+color: #ff00d4;
+}
+i.fa-brands.fa-linkedin.fa-2xl:hover{
+    color:#0044ff;
+}
+i.fa-brands.fa-youtube.fa-2xl:hover{
+    color:#ff0000;
+}
+i.fa-solid.fa-user.fa-2xl{
+    color:#33ff00;
+}
+i.fa-solid.fa-user.fa-2xl:hover{
+    color:#166d00;
+}
+i.fa-brands.fa-github.fa-2xl:hover{
+    color: #ffffff;
+}
+i.fa-brands.fa-github.fa-2xl{
+color: #009ba0;
+}
+i.fa-brands.fa-linkedin.fa-2xl, i.fa-brands.fa-youtube.fa-2xl,
+i.fa-brands.fa-instagram.fa-2xl {
+color: #fff;
+}
+.list-group{
+    --bs-list-group-bg: transparent;
+    --bs-list-group-border-color: transparent;
+}
+
+
+/*FONDO*/
+main.contenido{
+    background-image: url(../IMG/pexels-josh-sorenson-1154510.jpg);
+    width: 100%;
+    position: relative;
+}
+main.contenido::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    position: absolute;
+    opacity: 0.5;
+}
+main.contenido section.about div.container-fluid {
+    position: relative;
+}
+
+
+/*TITULOS*/
+h3{
+    color: #ffffff;
+}
+
+
+/*LISTA*/
+a.list-group-item{
+    background-color: #ffffff00;
+    border-color: #fff;
+    border-width: 2px;
+    color: #ffffff;
+    margin:0px auto;
+}
+div.medio{
+    margin: 0px auto;
+}
+
+
+/*GUARDAR*/
+div.col-1{
+    background-color: #000000e8;
+    border-radius: 8px;
+}
+div.centrar{
+    display: flex;
+    justify-content: flex-start;
+    color: #ffffff;
+}
+
+
+/*SKILLS*/
+div.skills{
+    padding: 1em 0;
+}
+div.skills__item{
+margin: 0px auto;
+}
+div.skills__bar, 
+div.skills__bar::after{
+    position: relative;
+    width: 300px;
+    height: 10px;
+    background-color: #a0a0a0;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 0px auto;
+}
+div.skills__bar::after{
+    content: "";
+    left: -300px;
+    position: absolute;
+    background-color: #00aeb4;
+    transition:var(--transition);
+    animation: skills-bar-fill 2s ease-in-out forwards;
+}
+div.skills__bar--80::after{
+    --skills-bar-legth:80%;
+}
+div.skills__bar--90::after{
+    --skills-bar-legth:90%;
+}
+div.skills__bar--60::after{
+    --skills-bar-legth:60%;
+}
+h6.skills__tech{
+    color: #ffffff;
+}
+@keyframes skills-bar-fill {
+    to {
+        transform: translateX(var(--skills-bar-legth));
+    }
+}

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard
+    </title>
+        <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<script src="https://kit.fontawesome.com/3ad4899de7.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="Assets/CSS/style2.css">
+<meta name="viewport" content="width=device-width, user-scalable-no, initial-scale=1.0, maximun-scale-1.0, minimun-scale-1,0">
+</head>
+<body>
+  <main class="contenido">
+  <div class="everything">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-primary">
+            <div class="container-fluid">
+              <div class="navbar-brand">
+              <img src="Assets/IMG/logo.png" alt="" width="" height="">
+              </div>
+            <ul class="list-group list-group-horizontal">
+            <li class="list-group-item"><a href="https://www.instagram.com/luks_vera_llvprod/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a></li>
+            <li class="list-group-item"><a href="https://www.linkedin.com/in/lucas-vera-llv-prod-437130213/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"></i></a></li>
+            <li class="list-group-item"><a href="https://github.com/Blackstorm23" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a></li>
+            <li class="list-group-item"><a href="https://www.youtube.com/channel/UCaYIT-GrNJe3mLouCu671Qg" target="_blank"><i class="fa-brands fa-youtube fa-2xl"></i></a></li>
+            <!-- Button trigger modal -->
+            <li class="list-group-item">
+             <i title="Usuario" class="fa-solid fa-user fa-2xl" type="button">
+            </i></li>
+        </ul>
+            </div>
+          </nav>
+        </header>
+
+        <!-- List group -->
+          <section id="todo" class="about">
+    <div class="container-fluid text-center">
+        <div class="row">
+            <!--Sidebar-->
+            <div class="col">
+              <div class="list-group" id="list-tab" role="tablist">
+                <div class="col-3">
+                <a class="list-group-item list-group-item-action active list-group-item-info" id="list-home-list" href="/index.html" target="_blank">Home</a>
+              </div>
+                <a class="list-group-item list-group-item-action list-group-item-info" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">Datos Personales</a>
+                <a class="list-group-item list-group-item-action list-group-item-info" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">Experiencia Laboral</a>
+                <a class="list-group-item list-group-item-action list-group-item-info" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">Educación</a>
+                <a class="list-group-item list-group-item-action list-group-item-info" id="list-skills-list" data-bs-toggle="list" href="#list-skills" role="tab" aria-controls="list-skills">Hard & Soft Skills</a>
+                <a class="list-group-item list-group-item-action list-group-item-info" id="list-proyectos-list" data-bs-toggle="list" href="#list-proyectos" role="tab" aria-controls="list-proyectos">Proyectos</a>
+              </div>
+            </div>
+            <!--
+                <div class="tab-content" id="nav-tabContent">
+                  
+                  <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div>
+                </div>-->
+
+          <div class="col-9 mt-3 tab-content medio" id="nav-tabContent">
+            <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+              <h3>Datos Personales</h3>
+              <div class="mb-3">
+                <div class="col-2 centrar">
+                  <label for="formFile" class="form-label"><h6>Foto de perfil</h6></label>
+                </div>
+                <div class="row">
+                <input class="form-control" type="file" id="formFile">
+              </div>
+              <div class="col-1 mt-1">
+                <button type="button" class="btn btn-outline-info">Guardar</button>
+              </div>
+              </div>
+              <div class="mb-3">
+                <div class="col-3 centrar">
+                  <label for="formFile" class="form-label"><h6>Nombre y Apellido</h6></label>
+                </div>
+                <div class="row">
+                <input class="form-control" type="text" id="formFile">
+              </div>
+              <div class="col-1 mt-1">
+                <button type="button" class="btn btn-outline-info">Guardar</button>
+              </div>
+            </div>
+            <div class="mb-3">
+              <div class="col-2 centrar">
+              <label for="formFile" class="form-label"><h6>Acerca de mí</h6></label>
+            </div>
+              <div class="row">
+              <input class="form-control" type="text" id="formFile">
+            </div>
+            <div class="col-1 mt-1">
+              <button type="button" class="btn btn-outline-info">Guardar</button>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+          <h3>Experiencia Laboral</h3>
+          <div class="mb-3">
+            <div class="col-2 centrar">
+              <label for="formFile" class="form-label"><h6>Logo de empresa</h6></label>
+            </div>
+            <div class="row">
+            <input class="form-control" type="file" id="formFile">
+          </div>
+          <div class="col-1 mt-1">
+            <button type="button" class="btn btn-outline-info">Guardar</button>
+          </div>
+          </div>
+          <div class="mb-3">
+            <div class="col-2 centrar">
+              <label for="formFile" class="form-label"><h6>Título del puesto</h6></label>
+            </div>
+            <div class="row">
+            <input class="form-control" type="text" id="formFile">
+          </div>
+          <div class="col-1 mt-1">
+            <button type="button" class="btn btn-outline-info">Guardar</button>
+          </div>
+        </div>
+        <div class="mb-3">
+          <div class="col-2 centrar">
+          <label for="formFile" class="form-label"><h6>Período</h6></label>
+        </div>
+          <div class="row">
+          <input class="form-control" type="text" id="formFile">
+        </div>
+        <div class="col-1 mt-1">
+          <button type="button" class="btn btn-outline-info">Guardar</button>
+        </div>
+        </div>
+        <div class="mb-3">
+          <div class="col-3 centrar">
+          <label for="formFile" class="form-label"><h6>Actividades del puesto</h6></label>
+        </div>
+          <div class="row">
+          <input class="form-control" type="text" id="formFile">
+        </div>
+        <div class="col-1 mt-1">
+          <button type="button" class="btn btn-outline-info">Guardar</button>
+        </div>
+        </div>
+    </div>
+    <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+      <h3>Educación</h3>
+          <div class="mb-3">
+            <div class="col-2 centrar">
+              <label for="formFile" class="form-label"><h6>Logo del instituto</h6></label>
+            </div>
+            <div class="row">
+            <input class="form-control" type="file" id="formFile">
+          </div>
+          <div class="col-1 mt-1">
+            <button type="button" class="btn btn-outline-info">Guardar</button>
+          </div>
+          </div>
+          <div class="mb-3">
+            <div class="col-3 centrar">
+              <label for="formFile" class="form-label"><h6>Nombre del instituto</h6></label>
+            </div>
+            <div class="row">
+            <input class="form-control" type="text" id="formFile">
+          </div>
+          <div class="col-1 mt-1">
+            <button type="button" class="btn btn-outline-info">Guardar</button>
+          </div>
+        </div>
+        <div class="mb-3">
+          <div class="col-2 centrar">
+          <label for="formFile" class="form-label"><h6>Título</h6></label>
+        </div>
+          <div class="row">
+          <input class="form-control" type="text" id="formFile">
+        </div>
+        <div class="col-1 mt-1">
+          <button type="button" class="btn btn-outline-info">Guardar</button>
+        </div>
+        </div>
+        <div class="mb-3">
+          <div class="col-2 centrar">
+          <label for="formFile" class="form-label"><h6>Año</h6></label>
+        </div>
+          <div class="row">
+          <input class="form-control" type="text" id="formFile">
+        </div>
+        <div class="col-1 mt-1">
+          <button type="button" class="btn btn-outline-info">Guardar</button>
+        </div>
+        </div>
+    </div>
+    <div class="tab-pane fade" id="list-skills" role="tabpanel" aria-labelledby="list-skills-list">
+      <h3>Hard & Soft Skills</h3>
+      <div class="mb-3">
+        <div class="col">
+      <div class="skills">
+        <div class="skills__item">
+        <h6 class="skills__tech">HTML</h6>
+        <div class="skills__bar skills__bar--90">
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="skills">
+        <div class="skills__item">
+        <h6 class="skills__tech">CSS</h6>
+        <div class="skills__bar skills__bar--80">
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="skills">
+        <div class="skills__item">
+        <h6 class="skills__tech">JavaScript</h6>
+        <div class="skills__bar skills__bar--60">
+        </div>
+      </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    <div class="tab-pane fade" id="list-proyectos" role="tabpanel" aria-labelledby="list-proyectos-list">
+      <h3>Proyectos</h3>
+          <div class="mb-3">
+            <div class="col-2 centrar">
+              <label for="formFile" class="form-label"><h6>Nombre</h6></label>
+            </div>
+            <div class="row">
+            <input class="form-control" type="text" id="formFile">
+          </div>
+          <div class="col-1 mt-1">
+            <button type="button" class="btn btn-outline-info">Guardar</button>
+          </div>
+          </div>
+          <div class="mb-3">
+            <div class="col-2 centrar">
+              <label for="formFile" class="form-label"><h6>Fecha de realización</h6></label>
+            </div>
+            <div class="row">
+            <input class="form-control" type="text" id="formFile">
+          </div>
+          <div class="col-1 mt-1">
+            <button type="button" class="btn btn-outline-info">Guardar</button>
+          </div>
+        </div>
+        <div class="mb-3">
+          <div class="col-3 centrar">
+          <label for="formFile" class="form-label"><h6>Descripción del proyecto</h6></label>
+        </div>
+          <div class="row">
+          <input class="form-control" type="text" id="formFile">
+        </div>
+        <div class="col-1 mt-1">
+          <button type="button" class="btn btn-outline-info">Guardar</button>
+        </div>
+        </div>
+        <div class="mb-3">
+          <div class="col-2 centrar">
+          <label for="formFile" class="form-label"><h6>Link</h6></label>
+        </div>
+          <div class="row">
+          <input class="form-control" type="text" id="formFile">
+        </div>
+        <div class="col-1 mt-1">
+          <button type="button" class="btn btn-outline-info">Guardar</button>
+        </div>
+        </div>
+        <div class="mb-3">
+          <div class="col-2 centrar">
+          <label for="formFile" class="form-label"><h6>Imágenes</h6></label>
+        </div>
+          <div class="row">
+          <input class="form-control" type="file" id="formFile">
+        </div>
+        <div class="col-1 mt-1">
+          <button type="button" class="btn btn-outline-info">Guardar</button>
+        </div>
+        </div>
+    </div>
+  </div>
+      </div>
+    </div>
+  </section>
+  </main>
+</div>
+
+
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
